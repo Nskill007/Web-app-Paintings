@@ -1,0 +1,152 @@
+html{
+    background-color: #f2f2f2;
+    font-family: 'Asap', sans-serif;
+}
+
+body{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+
+.image{
+    height:50px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.table-container{
+    position: static;
+}
+
+table{
+    margin: 100px auto 20px auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 40vw;
+    height: 200px;
+    border: 1px solid #f2f2f2;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2), -1px -1px 3px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+tr{
+    transition: all .2s ease-in;
+}
+
+th,td{
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    letter-spacing: 0.35px;
+}
+
+#header{
+    background-color: #2e79ba;
+    color:#fff;
+
+}
+
+/*h1{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    font-weight: 600;*/
+/*    padding: 10px 0px;*/
+/*    color:#000;*/
+/*    margin-bottom: 40px;*/
+/*    font-size: 35px;*/
+/*    width: 100%;*/
+/*    border-radius: 20px;*/
+/*    border-width: 60vw;*/
+
+
+/*}*/
+
+tr:hover{
+    transform: scale(1.01);
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2), -1px -1px 8px rgba(0,0,0,0.2) ;
+}
+
+tr:nth-child(1):hover{
+    transform: none;
+}
+
+tr:nth-child(odd){
+    background-color: #eeeeee;
+}
+
+@media only screen and (max-width: 768px){
+    table th{
+        width: 80%;
+    }
+}
+
+.removeOrder{
+    margin: 40px auto 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    display: inline-block;
+    background-color: #000;
+    border-style: solid;
+    border-color: #000;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    margin: auto auto;
+    position: relative;
+    bottom: 0;
+}
+
+.button:hover{
+    color: #000;
+    background-color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.18);
+}
+
+input{
+    border-radius: 5px;
+    border-color: #000;
+    padding-right: 2px;
+    color: #000;
+    font-weight: bold;
+}
+
+.successMessage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 600;
+    height: 600px;
+}
+
+.homepage{
+    font-size: 30px;
+}
+
+a {
+    color:#113f67;
+    text-decoration: none;
+}
+
+a:hover {
+    transition: color 0.5s ease-out;
+    text-decoration: underline;
+    color: #f96d00;
+}

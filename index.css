@@ -1,0 +1,148 @@
+.image{
+    height:350px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns:40% 40%;
+    grid-auto-rows: auto;
+    grid-column-gap: 60px;
+    grid-row-gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+header{
+    text-align: center;
+    font-weight: 700;
+    font-size: 60px;
+    margin: 100px 0 100px 0;
+}
+
+html{
+    background-color: #f2f2f2;
+    font-family: 'Asap', sans-serif;
+    /*font-family: 'Comfortaa', cursive;*/
+    /*Arial, Helvetica, sans-serif ;*/
+}
+
+.grid-item{
+    background-color: white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+    position:relative;
+}
+
+.details{
+    margin-left: 5%;
+    margin-right: 8%;
+}
+
+.order-button{
+    display: block;
+    width: 50%;
+    background-color: black;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    margin: 9% auto 9% auto;
+    position: relative;
+    bottom: 0;
+}
+
+.order-button:hover{
+    color: black;
+    background-color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.18);
+}
+
+.page-buttons{
+    font-weight: 700;
+    width: 30%;
+    background-color: #7A9D96;
+    border-style: solid;
+    border-color: #7A9D96;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    margin: 3% auto 2% auto;
+    position: relative;
+    bottom: 0;
+}
+
+.page-buttons:hover{
+    color: #7A9D96;
+    background-color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.18);
+}
+
+.end{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1250px){
+    .image {
+        height: 270px;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    .image {
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+    .grid-container{
+        grid-template-columns:80%;
+        grid-column-gap: 0px;
+    }
+
+    .image {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 690px){
+
+    .image {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    .image {
+        height: 300px;
+    }
+}
+
+
+@media only screen and (max-width: 480px){
+
+    .image {
+        height: 250px;
+    }
+}
+
